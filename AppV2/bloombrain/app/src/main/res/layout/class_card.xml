@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/violate_blue_gradient_background"
+    app:cardCornerRadius="10.0dip"
+    app:cardElevation="5.0dip">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="16.0dip">
+
+        <TextView
+            android:id="@id/class_topic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:paddingBottom="8.0dip"
+            android:text="Introduction To Trigonometry"
+            android:textColor="#ff000000"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@id/class_subject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/class_topic"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:paddingBottom="8.0dip"
+            android:text="Geometry"
+            android:textSize="16.0sp" />
+
+        <ImageView
+            android:id="@id/clock_icon"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:layout_below="@id/class_subject"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:src="@drawable/ic_alarm_gray" />
+
+        <TextView
+            android:id="@id/class_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/class_subject"
+            android:layout_marginBottom="16.0dip"
+            android:layout_toRightOf="@id/clock_icon"
+            android:text="10th Jun, 10 AM"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="16.0sp" />
+
+        <Button
+            android:id="@id/class_card_action"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/class_time"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/class_attend_background"
+            android:padding="16.0dip"
+            android:text="Attend"
+            android:textAlignment="center"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp"
+            android:layout_gravity="center_horizontal" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/violate_blue_gradient_background"
+            app:contentInsetEnd="0.0dip"
+            app:contentInsetLeft="0.0dip"
+            app:contentInsetRight="0.0dip"
+            app:contentInsetStart="0.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/profile_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:padding="8.0dip"
+                    android:text="Practice Tests"
+                    android:textColor="#ffffffff"
+                    android:textSize="24.0sp" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16.0dip">
+
+                <Spinner
+                    android:id="@id/sp_subjects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24.0dip"
+                    android:layout_centerVertical="true" />
+
+                <Switch
+                    android:id="@id/sw_test_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="false"
+                    android:text="Attempted "
+                    android:textSize="18.0sp" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/rv_test"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

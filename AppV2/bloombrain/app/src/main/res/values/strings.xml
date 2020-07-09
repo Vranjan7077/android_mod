@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">bloombrain</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="slide_1_desc">Amalgamation of conventional board teaching, using animations and technology to trigger senses for retention!</string>
+    <string name="slide_2_desc">Curriculum curated to match and relate topics to make it easier for students to grasp!</string>
+    <string name="slide_3_desc">We stand out with the unique process of Engage+ which enables the environment of learning to be discussion based ultimately helping us to know whether the student has really understood what we taught in the class or not!</string>
+    <string name="slide_4_desc">Engaging teachers, expert in theoretical &amp; practical aspects of subjects!</string>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_green_gradient_background"
+            app:contentInsetEnd="0.0dip"
+            app:contentInsetLeft="0.0dip"
+            app:contentInsetRight="0.0dip"
+            app:contentInsetStart="0.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32.0dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/profile_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="8.0dip"
+                    android:text="Hello, Mangesh!"
+                    android:textColor="#ffffffff"
+                    android:textSize="24.0sp" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@id/demo_class_card"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/demo_class_card_background"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@id/demo_class_icon"
+                android:layout_width="64.0dip"
+                android:layout_height="64.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip"
+                android:src="@drawable/ic_demo_class" />
+
+            <TextView
+                android:id="@id/check_out_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:layout_toRightOf="@id/demo_class_icon"
+                android:text="Check out our Demo Classes"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@id/check_out_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/check_out_text"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginBottom="16.0dip"
+                android:layout_toLeftOf="@id/right_arrow_icon"
+                android:layout_toRightOf="@id/demo_class_icon"
+                android:text="selected some random classes here in demo so that you can get an idea about what’s inside."
+                android:textColor="#ff000000"
+                android:textSize="12.0sp" />
+
+            <ImageView
+                android:id="@id/right_arrow_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16.0dip"
+                android:src="@drawable/ic_right_arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16.0dip"
+            android:text="Upcoming Live Classes"
+            android:textColor="#ff333333"
+            android:textSize="24.0sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/rv_class"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16.0dip" />
+
+        <TextView
+            android:id="@id/empty_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="You don't have any upcoming classes. Check out Tests in Test Section."
+            android:visibility="gone" />
+    </LinearLayout>
+</FrameLayout>

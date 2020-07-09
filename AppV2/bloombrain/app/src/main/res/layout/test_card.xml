@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/violate_blue_gradient_background"
+    app:cardCornerRadius="10.0dip"
+    app:cardElevation="5.0dip">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="16.0dip">
+
+        <TextView
+            android:id="@id/test_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:paddingBottom="8.0dip"
+            android:text="Environment Subjective -- III"
+            android:textColor="#ff000000"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@id/test_subject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_name"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:paddingBottom="8.0dip"
+            android:text="Science"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@id/test_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_subject"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:paddingBottom="8.0dip"
+            android:text="40 mins"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@id/test_questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_subject"
+            android:layout_toRightOf="@id/test_time"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:paddingBottom="8.0dip"
+            android:text="10 Questions"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@id/test_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_subject"
+            android:layout_toRightOf="@id/test_questions"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:paddingBottom="8.0dip"
+            android:text="MCQ"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="16.0sp" />
+
+        <Button
+            android:id="@id/test_card_action"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_time"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/violate_blue_gradient_curved_background"
+            android:padding="16.0dip"
+            android:text="Take Test"
+            android:textAlignment="center"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

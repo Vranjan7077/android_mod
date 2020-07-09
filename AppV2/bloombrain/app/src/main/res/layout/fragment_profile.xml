@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/orange_yellow_gradient_background"
+            app:contentInsetEnd="0.0dip"
+            app:contentInsetLeft="0.0dip"
+            app:contentInsetRight="0.0dip"
+            app:contentInsetStart="0.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32.0dip"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16.0dip">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="104.0dip"
+                        android:layout_height="104.0dip"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_profile"
+                        tools:ignore="MissingClass" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@id/profile_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="8.0dip"
+                    android:text="Mangesh Kokare"
+                    android:textColor="#ffffffff"
+                    android:textSize="24.0sp" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:layout_marginBottom="16.0dip"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@id/account_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8.0dip"
+                        android:text="Account Details"
+                        android:textColor="#ff000000"
+                        android:textSize="24.0sp"
+                        android:textStyle="bold"
+                     />
+
+                    <LinearLayout
+                        android:id="@id/ll_profile_plan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+
+                        android:layout_marginLeft="16dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_golden_badge" />
+
+                        <TextView
+                            android:id="@id/profile_plan"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:text="Basic Plan"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/ll_batch_no"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:orientation="horizontal"
+
+                        android:layout_marginLeft="16dp">
+
+                        <ImageView
+                            android:layout_width="24.0dip"
+                            android:layout_height="24.0dip"
+                            android:src="@drawable/ic_batch" />
+
+                        <TextView
+                            android:id="@id/profile_batch_no"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:text="Batch IV - 45"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/ll_enrollment_no"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:orientation="horizontal"
+
+                        android:layout_marginLeft="16dp">
+
+                        <ImageView
+                            android:layout_width="24.0dip"
+                            android:layout_height="24.0dip"
+                            android:src="@drawable/ic_hash" />
+
+                        <TextView
+                            android:id="@id/profile_enrollment_no"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16.0dip"
+                            android:text="345678"
+                            android:textSize="18.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingLeft="8.0dip"
+                            android:paddingTop="16.0dip"
+                            android:paddingRight="8.0dip"
+                            android:text="To access all content in our app. Checkout our Exclusive Plans."
+                            android:textAlignment="center"
+                            android:textSize="18.0sp" />
+
+                        <Button
+                            android:id="@id/btn_view"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16.0dip"
+                            android:layout_marginTop="16.0dip"
+                            android:layout_marginRight="16.0dip"
+                            android:background="@drawable/curved_rectangle_primary"
+
+                            android:text="View Plans"
+                            android:textColor="#ffffffff"
+                            android:textSize="18.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:layout_marginBottom="16.0dip"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@id/personal_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8.0dip"
+                            android:text="Personal Details"
+                            android:textColor="#ff000000"
+                            android:textSize="24.0sp"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/personal_details"
+                            android:layout_alignBottom="@id/personal_details"
+                            android:layout_alignParentRight="true"
+                            android:background="@null"
+                            android:src="@drawable/ic_edit" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="16dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_phone" />
+
+                        <TextView
+                            android:id="@id/profile_phone_no"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16.0dip"
+                            android:text="+91 6543876891"
+                            android:textSize="18.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="16dp">
+
+                        <ImageView
+                            android:layout_width="24.0dip"
+                            android:layout_height="24.0dip"
+                            android:src="@drawable/ic_email" />
+
+                        <TextView
+                            android:id="@id/profile_email"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16.0dip"
+                            android:text="john.de@gmail.com"
+                            android:textSize="18.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="16dp">
+
+                        <ImageView
+                            android:layout_width="24.0dip"
+                            android:layout_height="24.0dip"
+                            android:src="@drawable/ic_home" />
+
+                        <TextView
+                            android:id="@id/profile_address"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16.0dip"
+                            android:text="North Block, Delhi - 234 567"
+                            android:textSize="18.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="16dp">
+
+                        <ImageView
+                            android:layout_width="24.0dip"
+                            android:layout_height="24.0dip"
+                            android:src="@drawable/ic_gender" />
+
+                        <TextView
+                            android:id="@id/profile_gender"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16.0dip"
+                            android:text="Male"
+                            android:textSize="18.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:layout_marginBottom="16.0dip"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@id/academic_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8.0dip"
+                            android:text="Academic Details"
+                            android:textColor="#ff000000"
+                            android:textSize="24.0sp"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/academic_details"
+                            android:layout_alignBottom="@id/academic_details"
+                            android:layout_alignParentRight="true"
+                            android:background="@null"
+                            android:src="@drawable/ic_edit" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="16dp">
+
+                        <ImageView
+                            android:layout_width="24.0dip"
+                            android:layout_height="24.0dip"
+                            android:src="@drawable/ic_school" />
+
+                        <TextView
+                            android:id="@id/profile_school"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16.0dip"
+                            android:text="Delhi Public School, Naupada"
+                            android:textSize="18.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="16dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_learn" />
+
+                        <TextView
+                            android:id="@id/profile_board"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:text="CBSE"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="16dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_class" />
+
+                        <TextView
+                            android:id="@id/profile_class"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:text="Class IV"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
